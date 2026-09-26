@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Stock Manager</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+  :root{ --bg:#f4f6f5; --panel:#fff; --border:#e2e6e4; --text:#14201b; --muted:#5b6a63; --accent:#e8842c; --accent2:#1f7a5c; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1512; --panel:#161f1a; --border:#26332c; --text:#eef3ef; --muted:#9fb0a6; } }
+  html,body{height:100%;}
+  body{background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;}
+  .muted{color:var(--muted);}
+  .tab-active{background:var(--accent2);color:#fff;}
+  table{border-collapse:collapse;} th,td{border-bottom:1px solid var(--border);}
+  input,select{color:var(--text);}
+</style>
+</head>
+<body class="min-h-screen">
+<div id="app"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
